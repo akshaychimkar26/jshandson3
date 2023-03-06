@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title>Iteration Statements</title>
+    </head>
+    <body>
+        <h1><u>3)Iteration Statements</u></h1></br>
+        <p><h1>i)Find the number of digits</h1></br>Take a number from the user and print the count of digits in that number.<b>Note</b>: You have to complete <b>Find_Digits</b>. No need to take any input.</p>
+        <p><h1>Input Format</h1></br>The input contains a single number N.</p>
+        <p><h1>Output Format</h1></br>Return the count of digits in the given number.</p>
+        <p><h1>Constraints</h1></br>1 ≤ N ≤ 1000</p>
+        <p><h1>Time Limit</h1></br>1 second</p>
+        <p><h1>Example</h1></br>Sample Input</br>1234</br>Sample Output</br>4</p>
+        <p>CODE</p>
+        <p>const Find_Digits = (N) =></br>{let ans=0;</br>while(N!==0){</br>ans++;</br>N=Math.floor(N/=10);</br>}</br>return ans;</br>};</p>
+        <p>OUTPUT</p>
+        <p>Input</br>1234</br>Output</br>4</p><hr>
+
+        <p><h1>ii)Find the Fives.</h1></br>Among all the digits from 0−9, PrepBuddy likes number 5. He has a number and wants you to find out the number of times 5 occurred in the given number.<b>Note</b>: You have to complete <b>Find_Five</b>. No need to take any input.</p>
+        <p><h1>Input Format</h1></br>The input contains a single number N.</p>
+        <p><h1>Output Format</h1></br>Return the number of fives as the desired output</p>
+        <p><h1>Constraints</h1></br>1 ≤ N ≤ 10000000</p>
+        <p><h1>Time Limit</h1></br>1 second</p>
+        <p><h1>Example</h1></br>Sample Input</br>345654</br>Sample Output</br>2</p>
+        <p>CODE</p>
+        <p>const Find_Five = (N) => {</br>let count=0;</br>while (N!==0){</br>let check=N%10;</br>if (check===5){</br>count++;</br>}</br>N=Math.floor(N/10);</br>}</br>return count;};</p>
+        <p>OUTPUT</p>
+        <p>Input</br>345654</br>Output</br>2</p><hr>
+
+        <p><h1>iii)Find Sum</h1></br>You are given an integer N, and your task is to find the sum of all the even integers starting from 1 upto N (N inclusive).<b>Note</b>: You have to complete <b>findSum function</b>. No need to take any input.</p>
+        <p><h1>Input Format</h1></br>The first and the only line of the input contains an integer N.</p>
+        <p><h1>Output Format</h1></br>Return the sum of all even integers from 1 upto N (N inclusive).</p>
+        <p><h1>Constraints</h1></br>1 ≤ N ≤ 500</p>
+        <p><h1>Time Limit</h1></br>1 second</p>
+        <p><h1>Example</h1></br>Sample Input</br>6</br>Sample Output</br>12</p>
+        <p>CODE</p>
+        <p>const findSum = (n) => {let ans=0;</br>for(i=1;i<=n;i++){</br>if(i%2===0){</br>ans+=i;</br>}</br>}</br>return ans;</br>};</p>
+        <p>OUTPUT</p>
+        <p>Input</br>6</br>Output</br>12</p><hr>
+
+        <p><h1>iv)Find the sum of the digits of a given number.</h1></br>Write a program that takes a number from the user and get the sum of the digits present in the number.<b>Note</b>: You have to complete <b>Number_Sum</b>. No need to take any input.</p>
+        <p><h1>Input Format</h1></br>The input contains a single number N.</p>
+        <p><h1>Output Format</h1></br>Return the sum of the digits of the number.</p>
+        <p><h1>Constraints</h1></br>1 ≤ N ≤ 10000</p>
+        <p><h1>Time Limit</h1></br>1 second</p>
+        <p><h1>Example</h1></br>Sample Input</br>1234</br>Sample Output</br>10</p>
+        <p>CODE</p>
+        <p>const Number_Sum = (N) => {</br>let sumOfDigits= 0;</br>let remainder;</br>while(N)</br>{</br>remainder = N % 10;</br>sumOfDigits = sumOfDigits + remainder;</br>N = Math.floor(N/10);</br>}</br>return sumOfDigits;};</p>
+        <p>OUTPUT</p>
+        <p>Input</br>1234</br>Output</br>10</p><hr>
+
+        <p><h1>v)Print the Odds.</h1>Write a program which takes  a number from user and print all odd numbers in between 2 and N, but print 2 first.<b>Note</b>: You have to complete <b>Print_Odd</b>. No need to take any input.</p>
+        <p><h1>Input Format</h1>The input contains a single number N.</p>
+        <p><h1>Output Format</h1>Print the desired output.</p>
+        <p><h1>Constraints</h1>2 ≤ N ≤ 100</p>
+        <p><h1>Time Limit</h1>1 second</p>
+        <p><h1>Example</h1>Sample Input</br>10</br>Sample Output</br>2</br>3</br>5</br>7</br>9</p>
+        <p>CODE</p>
+        <p>const Print_Odd = (N) => {</br>console.log("2");</br>for(i=3;i<=N;i++){</br>if(i%2!==0){</br>console.log(i);</br>}</br>}</br>};</p>
+        <p>OUTPUT</p>
+        <p>Input</br>10</br>Output</br>2</br>3</br>5</br>7</br>9</p><hr>
+
+        <p><h1>vi)Print the Pattern.</h1></br>Write a program which ask user for no of lines and print a pattern using an asterik .<b>Note</b>: You have to complete <b>Print_pattern</b>. No need to take any input.</p>
+        <p><h1>Input Format</h1></br>The input contains a single number N.</p>
+        <p><h1>Output Format</h1></br>Print the required pattern.</p>
+        <p><h1>Constraints</h1></br>1 ≤ N ≤ 100</p>
+        <p><h1>Time Limit</h1></br>1 second</p>
+        <p><h1>Example</h1></br>Sample Input</br>5</br>Sample Output</br>*</br>**</br>***</br>****</br>*****</p>
+        <p>CODE</p>
+        <p>const Print_pattern = (N) => {</br>let string="";
+        </br>for(row=1;row<=N;row++){
+        </br>for(col=1;col<=row;col++){</br>string+="*";</br>}</br>string+="\n";</br>}</br>console.log(string);};</p>
+        <p>OUTPUT</p>
+        <p>Input</br>5</br>Output</br>*</br>**</br>***</br>****</br>*****</p><hr>
+
+        <p><h1>vii)Check whether a Number is a prime or not.</h1></br>Write a program which takes  a number from user and check whether number is prime number or not a prime number.<b>Note</b>: You have to complete <b>Prime_Check</b>. No need to take any input.</p>
+        <p><h1>Input Format</h1></br>The input contains a single number N.</p>
+        <p><h1>Output Format</h1></br>Return "YES" if the given number is Prime, else print "NO"(without quotes).</p>
+        <p><h1>Constraints</h1></br>1 ≤ N ≤ 10000</p>
+        <p><h1>Time Limit</h1></br>1 second</p>
+        <p><h1>Example</h1></br>Sample Input</br>7</br>Sample Output 1</br>YES</br>Sample Output 2</br>4</br>Sample Output 2</br>NO</p>
+        <p>CODE</p>
+        <p>const Prime_Check = (N) => {let factor=0;</br>for(i=1;i<=N;i++){</br>if(N%i===0){</br>factor++;</br>}</br>}</br>if(factor===2){</br>return "YES";</br>}</br>else{</br>return "NO";</br>}</br>};</p>
+        <p>OUTPUT</p>
+        <p>Input</br>7</br>Output 1</br>YES</br>Output 2</br>4Output 2</br>NO</p><hr>
+        
+        <p><h1>viii)Print Numbers</h1></br>You are given an integer N, and your task is to print all the integers starting from 1 till N (N inclusive).<b>Note</b>: You have to complete <b>printNumbers function</b>. No need to take any input.</p>
+        <p><h1>Input Format</h1></br>The first and the only line of the input contains an integer N.</p>
+        <p><h1>Output Format</h1></br>Print all the numbers starting from 1 till N (including N).</p>
+        <p><h1>Constraints</h1></br>1 ≤ N ≤ 500</br></p>
+        <p><h1>Time Limit</h1></br>1 second</p>
+        <p><h1>Example</h1></br>Sample Input</br>4</br>Sample Output</br>1 2 3 4</p>
+        <p>CODE</p>
+        <p>const printNumbers = (n) => {</br>for(i=1;i<=n;i++){</br>console.log(i);</br>}</br>};</p>
+        <p>OUTPUT</p>
+        <p>Input</br>4</br>Output</br>1 2 3 4</p><hr>
+
+        <p><h1>ix)Print the Table</h1></br>Write a program which takes a number from user and print the table.<b>Note</b>: You have to complete <b>Print_Table</b>. No need to take any input.</p>
+        <p><h1>Input Format</h1></br>The input contains a single number N.</p>
+        <p><h1>Output Format</h1></br>Print the table of the given number.</p>
+        <p><h1>Constraints</h1></br>0 ≤ N ≤ 100</p>
+        <p><h1>Time Limit</h1></br>1 second</p>
+        <p><h1>Example</h1></br>Sample Input</br>3</br>Sample Output</br>3 * 1 = 3</br>3 * 2 = 3</br>3 * 3 = 3</br>3 * 4 = 3</br>3 * 5 = 3</br>3 * 6 = 3</br>3 * 7 = 3</br>3 * 8 = 3</br>3 * 9 = 3</br>3 * 10 = 3</p>
+        <p>CODE</p>
+        <p>const Print_Table = (N) => {</br>for (let i = 1; i <= 10; ++i){
+        </br>console.log( N + " * " +i + " = " + N * i);</br>}</br>};</p>
+        <p>OUTPUT</p>
+        <p>Input</br>3</br>Output</br>3 * 1 = 3</br>3 * 2 = 3</br>3 * 3 = 3</br>3 * 4 = 3</br>3 * 5 = 3</br>3 * 6 = 3</br>3 * 7 = 3</br>3 * 8 = 3</br>3 * 9 = 3</br>3 * 10 = 3</p><hr>
+        
+
+
+
+
+        </body>
+
+
+
+
+    </html>
